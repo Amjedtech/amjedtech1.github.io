@@ -1,0 +1,51 @@
+
+
+/* --------------------------- My Style --------------------------- */
+/*      ----------------------- Amjed -----------------------      */
+
+header 
+{
+background-color: #b2b2b2;
+
+}
+h1 
+{
+	color: #ffffff; 
+	text-transform: uppercase;
+	text-align: center;
+}
+h2 
+{
+	color: #000080; 
+	text-transform: uppercase;
+}
+section
+{
+	background-color: #727171;
+	width:100%;
+	height: 250px;
+	float: right;
+	display: table;
+}
+aside
+{
+	float: left;
+}
+a
+{
+	background-color: #c5c5c5;
+	color: #050505;
+}
+img
+{
+	visibility: hidden;	
+	float: left;
+	height: 25px;
+}
+.right p 
+{	
+	color: #050505;
+	font-size: 20px;	
+}
+/*      ----------------------- Amjed -----------------------      */
+/* --------------------------- My Style --------------------------- */
