@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Web Site</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mycss.css">  
+
+  </head>
+  <body>
+<!-- ----------------- The Start Of NavBar ------------------>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+  <a class="navbar-brand" target="blank" href="https://www.facebook.com/amjed.abn.alsham/">Amjed Tech</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My WebSite Lang</a>
+        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="HTML5.html">HTML5</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="CSS3.html">CSS3</a>
+          <div class="dropdown-divider"></div>          
+          <a class="dropdown-item" href="JS.html">JS</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Bootstrap4.5.html">Bootstrap4.5</a>
+        </div>
+      </li>
+      <li class="nav-item active1">
+        <a class="nav-link" href="Form.html">Create CV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link "  href="Display.html">Your CV</a>
+      </li>      
+    </ul>   
+  </div>
+</nav>
+<!-- ----------------- The End Of NavBar ------------------>
+<main role="main">
+<div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" style="border-radius: 5%;" src="img/cv.png" alt="" width="72" height="72">
+    <h2 style="color: white;">Create Your CV</h2>
+    <p class="lead">Here you will add some simple information to show you in the form of a simple CV.</p>
+  </div>
+
+<!-- ----------------- The Start Of Personal Details ------------------>
+ 
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Personal Details</h4>
+<form class="needs-validation" method="Get" action="Display.html">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Your First name" value="" required>
+            <div class="invalid-feedback">
+              Your First Name is Required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Your Last name" value="" required>
+            <div class="invalid-feedback">
+              Your Last Name is Required.
+            </div>
+          </div>
+        </div>
+
+          <div class="mb-3">
+          <label for="telNum"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/></svg>Telephone Number</label>
+          <div class="input-group">
+            
+           
+            <input type="text" class="form-control" name="telNum" id="telNum" placeholder="Telephone Number" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your Telephone Number is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+          </svg> Email</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your email@example.com">
+          <div class="invalid-feedback">
+            Please enter Your Email to communicate with you
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="mobNum"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+           <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg> Mobile Number</label>
+          <input type="text" class="form-control" name="mobNum" id="mobNum" placeholder="Your Mobile Phone" required>
+          <div class="invalid-feedback">
+            Please enter your Mobile Number.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+           <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg> Address</label>
+          <input type="text" class="form-control" name="address" id="address2" placeholder="Apartment or suite">
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" name="country" id="country" required>
+              <option value="">Choose...</option>
+              <option>Syria</option>
+              <option>Lepanon</option>
+              <option>Jordan</option>
+              <option>Spain</option>
+              <option>France</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>          
+        </div>
+<!-- ----------------- The End Of Personal Details ------------------>
+
+<!-- ----------------- The Start Of Education ------------------>
+
+        <hr class="mb-4">
+      <h4 class="mb-3">Education</h4>
+       <div class="mb-3">
+          <label for="collName"> College Name</label>
+          <input type="text" class="form-control" name="collName" id="collName" placeholder="Your College Name" required>
+          <div class="invalid-feedback">
+            Please enter your College Name.
+          </div>
+        </div>
+
+              <div class="mb-3">
+          <label for="collCity"> City</label>
+          <input type="text" class="form-control" name="collCity" id="collCity" placeholder="City" required>
+          <div class="invalid-feedback">
+            Please enter your College City.
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <label for="YearStart">Start Date</label>
+            <select class="custom-select  w-100" name="YearStart" id="YearStart" required>
+             <option value="">Year</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid Year.
+            </div>
+          </div>          
+        
+        <div class="col-sm-4">
+            <label for="YearEnd">End Date</label>
+            <select class="custom-select d-block w-100" name="YearEnd" id="YearEnd" required>
+             <option value="">Year</option>
+             <option value="">Not Graduted Yet </option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid Year.
+            </div>
+          </div>          
+        </div>
+<!-- ----------------- The End Of Education ------------------>
+
+<!-- ----------------- The Start Of Work Experience ------------------>
+
+        <hr class="mb-4">
+      <h4 class="mb-3">Work Experience</h4>
+       <div class="mb-3">
+          <label for="joptit">Job Title</label>
+          <input type="text" class="form-control" name="joptit" id="joptit" placeholder="Your Job Title" required>
+          <div class="invalid-feedback">
+            Please enter your Job Title.
+          </div>
+        </div>
+
+              <div class="mb-3">
+          <label for="comName"> Company Name</label>
+          <input type="text" class="form-control" name="comName" id="comName" placeholder="Your Company Name" required>
+          <div class="invalid-feedback">
+            Please enter your College City.
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <label for="YearsWork">The number of years you have worked</label>
+            <select class="custom-select  w-100" name="YearsWork" id="YearsWork" required>
+             <option value="">Year</option>
+            <option value="Less than a year">Less than a year</option>
+            <option value="one year">one year</option>
+            <option value="two years">two years</option>
+            <option value="three years">three years</option>
+            <option value="four years">four years</option>
+            <option value="Five years or more">Five years or more</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid Number of Years.
+            </div>
+          </div>      
+        <hr class="mb-4">   
+<!-- ----------------- The End Of Work Experience ------------------>
+
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue</button>
+
+</form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<!-- ----------------- The Start Of Footer ------------------>
+
+     <footer>
+      <div class="mini-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>© 2020 All rights reserved. Created by
+              <a href="https://www.facebook.com/amjed.abn.alsham/">Amjed Tech</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </footer>
+
+<!-- ----------------- The End Of Footer ------------------>
+     <script src="js/jquery-3.5.1.js"></script>     
+     <script src="js/bootstrap.js"></script>
+     <script src="js/form-validation.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     </body>
+</html>
